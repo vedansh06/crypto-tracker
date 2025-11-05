@@ -1,0 +1,142 @@
+.spinner {
+  display: grid;
+  place-self: center;
+  min-height: 80vh;
+}
+
+.spin {
+  width: 65px;
+  height: 65px;
+  place-self: center;
+  border: 5px solid #bdbdbd;
+  border-top-color: #4500c6;
+  border-radius: 50%;
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.coin-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.coin-main-card {
+  width: 90%;
+  max-width: 850px;
+  background: #0c122b;
+  border: 1px solid #1e2a4a;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.coin-top-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.coin-logo {
+  width: 70px;
+}
+
+.coin-title h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.coin-title span {
+  font-size: 20px;
+  color: #9fa8ff;
+  font-weight: bold;
+}
+
+.rank-badge {
+  display: inline-block;
+  margin-top: 4px;
+  background: #121c3b;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.price-change {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.green {
+  color: #25d366;
+}
+.red {
+  color: #ff4a4a;
+}
+
+.info-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #2a3d63;
+  background: #121b34;
+  color: #9eb9ff;
+  cursor: pointer;
+}
+
+.grid-box {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.item {
+  background: #0f182f;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px solid #20345b;
+}
+
+.item span {
+  opacity: 0.7;
+}
+
+.chart-card {
+  margin-top: 25px;
+  width: 90%;
+  max-width: 850px;
+  background: #0c122b;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid #1e2a4a;
+}
+
+.chart-card canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+.chart-card {
+  min-height: 350px;
+}
